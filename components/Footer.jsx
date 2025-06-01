@@ -45,7 +45,7 @@ const Footer = () => {
             <Link href="https://github.com/amirShahin-7" target="_blank">
               <FaGithub className="text-black hover:text-[var(--primary)] transition-colors text-xl" />
             </Link>
-            <Link href="https://files.fm/u/3bd2a5qr2h" target="_blank">
+            <Link href="https://blush-merla-87.tiiny.site/" target="_blank">
               <FaLinkedin className="text-black hover:text-[var(--primary)] transition-colors text-xl" />
             </Link>
             <Link href="mailto:amirshahin.1.512@gmail.com" target="_blank">
