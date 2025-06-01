@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-gradient: linear-gradient(135deg, #98c4bf 20%, #b2f7ef 100%);
+  --foreground: #171717;
+  --primary: #7bdff2;
+  --secondary: #f2b5d4;
+  --accent: #b2f7ef;
+  --highlight: #f7d6e0;
+}
+
+:root[data-theme="dark"] {
+  --background-gradient: linear-gradient(135deg, #5b6462 0%, #2b6579 100%);
+  --foreground: #ededed;
+  --primary: #4da8c7;
+  --secondary: #c286a6;
+  --accent: #80c9c0;
+  --highlight: #d4a9b5;
+}
+
+@layer base {
+  :root {
+    --background: var(--background-gradient);
+    --foreground: var(--foreground);
+    --primary: var(--primary);
+    --secondary: var(--secondary);
+    --accent: var(--accent);
+    --highlight: var(--highlight);
+    --font-sans: var(--font-roboto-sans);
+    --font-mono: var(--font-geist-mono);
+  }
+
+  body {
+    background: var(--background-gradient);
+    color: var(--foreground);
+    font-family: var(--font-sans), Arial, sans-serif;
+    font-size: 16px;
+    transition: background 0.5s ease, color 0.5s ease;
+  }
+
+  code,
+  pre {
+    font-family: var(--font-mono), monospace;
+  }
+}
